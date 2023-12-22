@@ -1,104 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <link rel="shortcut icon" href="images/HM-favicon-png.png" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <p><a href="#" class="logo">Hamdi M.</a> Portfolio</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HM Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon" />
+    </head>
+    <body class="font-Poppins">
+        <header class="sticky top-0 bg-twelve header">
+            <div class="text-ten flex justify-between items-center my-0 mx-4 h-[10vh]">
+                <p class="text-2xl italic">
+                    <a
+                        href="home.html"
+                        class="font-Lumanosino hover:text-3xl transition-all font-bold bg-four text-nine border border-one shadow-md rounded-tr-[10rem] rounded-bl-[10rem] p-[0.2em]"
+                        >Hamdi M.</a
+                    >
+                    <span id="typed-output">Portfolio</span>
+                </p>
+                <nav class="max-md:hidden">
+                    <ul class="flex gap-8">
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="home.html">Home</a>
+                        </li>
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="about.html">About</a>
+                        </li>
+                        <li class="text-four text-lg border-b-2 border-b-seven">
+                            <a class="hover:text-xl transition-all" href="services.html"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="contact.html">Contact</a>
+                        </li>
+                        <li class="text-ten">
+                            <a
+                                class="rounded-3xl p-2 bg-green-300 text-green-900 hover:text-xl hover:bg-green-500 border-green-500 border transition-all"
+                                href="contact.html"
+                                >Hire Me</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <img class="hidden max-md:block w-10 header__menu-icon" src="assets/images/svg/menu.svg" alt="Menu" />
             </div>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="current"><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a id="hire-me-btn-1" href="contact.html">Hire Me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="services-title-cover">
-            <h1>Services</h1>
-        </section>
-        <section class="what-I-do">
-            <h1>What I Do For You</h1>
-            <div class="service-list-container">
-                <div class="service-item">
-                    <img class="service-icon" src="images/web-dev-icon.png" alt="Web Development">
-                    <h2>Web Development</h2>
-                    <p>I specialize in crafting dynamic and responsive websites tailored to your needs. From conceptualization to deployment, I ensure a seamless user experience with visually appealing designs and efficient code, bringing your digital vision to life.</p>
+            <!-- Mobile Menu -->
+            <ul class="hidden header__nav--mobile">
+                <li class="p-4 hover:bg-seven">
+                    <a class="text-eleven" href="home.html">Home</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div
+                class="header__scroll-progress-container fixed top-0 left-0 w-full h-1 bg-twelve z-2"
+            >
+                <div class="scroll-progress h-full w-0 bg-eleven"></div>
+            </div>
+        </header>
+        <main>
+            <h1
+                class="flex justify-center items-center bg-gradient-to-bl from-[#84fab0] to-[#8fd3f4] h-[20vh] text-[3rem] font-light max-sm:h-[15vh]"
+            >
+                Services
+            </h1>
+            <section class="bg-emerald-300 p-8 max-md:p-1">
+                <h1 class="text-center text-4xl pb-6 max-md:text-2xl max-md:pt-2">What I Do For You</h1>
+                <div class="flex flex-wrap justify-evenly">
+                    <div
+                        class="bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem] mx-auto"
+                            src="assets/images/web-dev-icon.png"
+                            alt="Web Development"
+                        />
+                        <h2 class="text-3xl text-center">Web Development</h2>
+                        <p class="text-center my-4 leading-4">
+                            I specialize in crafting dynamic and responsive websites tailored to
+                            your needs. From conceptualization to deployment, I ensure a seamless
+                            user experience with visually appealing designs and efficient code,
+                            bringing your digital vision to life.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem] mx-auto"
+                            src="assets/images/app-dev-icon.png"
+                            alt="App Development"
+                        />
+                        <h2 class="text-3xl text-center">App Development</h2>
+                        <p class="text-center my-4 leading-4">
+                            Dive into the world of innovative mobile applications. I create
+                            user-centric apps that captivate and engage. Whether it's iOS or
+                            Android, I leverage cutting-edge technologies to deliver seamless
+                            experiences, ensuring your app stands out in the crowded digital
+                            landscape.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem] mx-auto"
+                            src="assets/images/photo-icon.png"
+                            alt="Photography"
+                        />
+                        <h2 class="text-3xl text-center">Photography</h2>
+                        <p class="text-center my-4 leading-4">
+                            Through my lens, I capture moments that tell unique stories. From
+                            portraits to landscapes, my photography is a blend of creativity and
+                            technical finesse. Whether it's a personal shoot or corporate event, I
+                            strive to immortalize memories with a distinctive and captivating visual
+                            narrative.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem] mx-auto"
+                            src="assets/images/seo-icon.png"
+                            alt="SEO Marketing"
+                        />
+                        <h2 class="text-3xl text-center">SEO Marketing</h2>
+                        <p class="text-center my-4 leading-5">
+                            I optimize your online presence for visibility. Through keyword
+                            research, on-page optimization, and strategic link building, I enhance
+                            your website's ranking, ensuring it stands out in search results.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem] mx-auto"
+                            src="assets/images/responsive-icon.png"
+                            alt="Responsive Design"
+                        />
+                        <h2 class="text-3xl text-center">Responsive Design</h2>
+                        <p class="text-center my-4 leading-5">
+                            Specializing in responsive design, I create websites that adapt
+                            seamlessly to diverse devices. Prioritizing user experience, my designs
+                            ensure optimal functionality, regardless of screen size or device type.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem] mx-auto"
+                            src="assets/images/digital-icon.png"
+                            alt="Digital Marketing"
+                        />
+                        <h2 class="text-3xl text-center">Digital Marketing</h2>
+                        <p class="text-center my-4 leading-5">
+                            I orchestrate effective strategies to boost your online presence. From
+                            social media campaigns to targeted content, I drive engagement and
+                            elevate brand visibility for lasting impact.
+                        </p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/app-dev-icon.png" alt="App Development">
-                    <h2>App Development</h2>
-                    <p>Dive into the world of innovative mobile applications. I create user-centric apps that captivate and engage. Whether it's iOS or Android, I leverage cutting-edge technologies to deliver seamless experiences, ensuring your app stands out in the crowded digital landscape.</p>
+                <p class="text-center my-2">
+                    <a class="hover:text-xl transition-all" href="services.html">More Services ➡</a>
+                </p>
+            </section>
+            <section class="bg-green-200 p-8">
+                <h1 class="text-4xl font-bold text-center pb-4 max-md:text-xl">
+                    Innovative Solutions To Boost Your Creative Projects
+                </h1>
+                <div class="flex flex-wrap justify-evenly gap-4 my-4">
+                    <div
+                        class="bg-green-100 border border-black border-solid w-[24rem] h-[18rem] mb-4 services__service-item rounded-lg"
+                    >
+                        <img
+                            class="max-w-full rounded-t-lg rounded-b-none"
+                            src="assets/images/discuss.jpg"
+                            alt="Discuss the Project"
+                        />
+                        <h2 class="m-4 text-2xl font-bold">Discuss the project</h2>
+                    </div>
+                    <div
+                        class="bg-green-100 border border-black border-solid w-[24rem] h-[18rem] mb-4 services__service-item rounded-lg"
+                    >
+                        <img
+                            class="max-w-full rounded-t-lg rounded-b-none"
+                            src="assets/images/develop-elaborate.jpg"
+                            alt="Develop and Elaborate"
+                        />
+                        <h2 class="m-4 text-2xl font-bold">Develop and Elaborate</h2>
+                    </div>
+                    <div
+                        class="bg-green-100 border border-black border-solid w-[24rem] h-[18rem] mb-4 services__service-item rounded-lg"
+                    >
+                        <img
+                            class="max-w-full rounded-t-lg rounded-b-none"
+                            src="assets/images/approvement.jpg"
+                            alt="Final Approvement"
+                        />
+                        <h2 class="m-4 text-2xl font-bold">Final Approvement</h2>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/photo-icon.png" alt="Photography">
-                    <h2>Photography</h2>
-                    <p>Through my lens, I capture moments that tell unique stories. From portraits to landscapes, my photography is a blend of creativity and technical finesse. Whether it's a personal shoot or corporate event, I strive to immortalize memories with a distinctive and captivating visual narrative.</p>
-                </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/seo-icon.png" alt="SEO Marketing">
-                    <h2>SEO Marketing</h2>
-                    <p> I optimize your online presence for visibility. Through keyword research, on-page optimization, and strategic link building, I enhance your website's ranking, ensuring it stands out in search results.</p>
-                </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/responsive-icon.png" alt="Responsive Design">
-                    <h2>Responsive Design</h2>
-                    <p>Specializing in responsive design, I create websites that adapt seamlessly to diverse devices. Prioritizing user experience, my designs ensure optimal functionality, regardless of screen size or device type.</p>
-                </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/digital-icon.png" alt="Digital Marketing">
-                    <h2>Digital Marketing</h2>
-                    <p>I orchestrate effective strategies to boost your online presence. From social media campaigns to targeted content, I drive engagement and elevate brand visibility for lasting impact.</p>
+            </section>
+        </main>
+        <footer class="bg-two text-center text-seven">
+            <div class="p-4 shadow-md shadow-one flex flex-col gap-4">
+                <p>
+                    <a
+                        class="font-Lumanosino shadow-black hover:text-xl font-bold bg-four text-nine border border-one shadow-md rounded-tr-[10rem] rounded-bl-[10rem] p-[0.2em]"
+                        href="home.html"
+                        >Hamdi M.</a
+                    >
+                </p>
+
+                <address class="flex flex-wrap justify-center gap-8">
+                    <p class="text-six">
+                        <img
+                            class="w-5 inline"
+                            src="assets/images/svg/phone-solid.svg"
+                            alt="Phone"
+                        />
+                        <a class="hover:text-xl transition-all" href="#">+251 912 345 678</a>
+                    </p>
+                    <p class="text-six">
+                        <img
+                            class="w-5 inline"
+                            src="assets/images/svg/envelope-solid.svg"
+                            alt="Email"
+                        />
+                        <a class="hover:text-xl transition-all" href="mailto:hm456123@gmail.com"
+                            >hm456123@gmail.com</a
+                        >
+                    </p>
+                    <p class="text-six">
+                        <img
+                            class="w-5 inline"
+                            src="assets/images/svg/location-dot-solid.svg"
+                            alt="Location"
+                        />
+                        <a
+                            class="hover:text-xl transition-all"
+                            href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7"
+                            >5kilo AAiT, Addis Ababa</a
+                        >
+                    </p>
+                </address>
+
+                <div class="flex justify-between">
+                    <p class="copyright-socials__copyright">
+                        &copy; 2023
+                        <a href="home.html"
+                            ><span
+                                class="font-Lumanosino shadow-black hover:text-xl font-bold bg-four text-nine border border-one shadow-md rounded-tr-[10rem] rounded-bl-[10rem] p-[0.2em]"
+                                >Hamdi M.</span
+                            >™</a
+                        >
+                        | All Rights Reserved
+                    </p>
+                    <div class="flex gap-4 max-md:hidden">
+                        <a class="socials-item - hover:btn-hover" href="https://github.com/hmyunis"
+                            ><img class="w-6" src="assets/images/svg/github.svg" alt="Github"
+                        /></a>
+                        <a
+                            class="socials-item - hover:btn-hover"
+                            href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"
+                            ><img class="w-6" src="assets/images/svg/linkedin.svg" alt="LinkedIn"
+                        /></a>
+                        <a class="socials-item - hover:btn-hover" href="https://t.me/Hamdi00"
+                            ><img class="w-6" src="assets/images/svg/telegram.svg" alt="Telegram"
+                        /></a>
+                        <a class="" href="#">🔼</a>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="innovative-solutions">
-            <h1 class="resume-h1">Innovative Solutions To Boost Your Creative Projects</h1>
-            <div class="solutions-container">
-                <div class="solution-item">
-                    <img src="images/discuss.jpg" alt="Discuss the Project">
-                    <h2>Discuss the project</h2>
-                </div>
-                <div class="solution-item">
-                    <img src="images/develop-elaborate.jpg" alt="Develop and Elaborate">
-                    <h2>Develop and Elaborate</h2>
-                </div>
-                <div class="solution-item">
-                    <img src="images/approvement.jpg" alt="Final Approvement">
-                    <h2>Final Approvement</h2>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="contact">
-            <p class="logo">Hamdi M.</p>
-            <address>
-                <p><img src="images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
-                <p><img src="images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
-                <p><img src="images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
-            </address>
-            <div class="copyright-container">
-                <p>&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="https://github.com/hmyunis"><img src="images/svg/github.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img src="images/svg/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://t.me/Hamdi00"><img src="images/svg/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><span id="scroll-to-top">Scroll to Top 🔼</span></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>

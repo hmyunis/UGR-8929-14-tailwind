@@ -1,73 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="shortcut icon" href="images/HM-favicon-png.png" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <p><a href="#" class="logo">Hamdi M.</a> Portfolio</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon" />
+    </head>
+    <body class="font-Poppins">
+        <header class="sticky top-0 bg-twelve header">
+            <div class="text-ten flex justify-between items-center my-0 mx-4 h-[10vh]">
+                <p class="text-2xl italic">
+                    <a
+                        href="home.html"
+                        class="font-Lumanosino hover:text-3xl transition-all font-bold bg-four text-nine border border-one shadow-md rounded-tr-[10rem] rounded-bl-[10rem] p-[0.2em]"
+                        >Hamdi M.</a
+                    >
+                    <span id="typed-output">Portfolio</span>
+                </p>
+                <nav class="max-md:hidden">
+                    <ul class="flex gap-8">
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="home.html">Home</a>
+                        </li>
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="about.html">About</a>
+                        </li>
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="services.html"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="text-four text-lg border-b-2 border-b-seven">
+                            <a class="hover:text-xl transition-all" href="contact.html">Contact</a>
+                        </li>
+                        <li class="text-ten">
+                            <a
+                                class="rounded-3xl p-2 bg-green-300 text-green-900 hover:text-xl hover:bg-green-500 border-green-500 border transition-all"
+                                href="contact.html"
+                                >Hire Me</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <img
+                    class="hidden max-md:block w-10 header__menu-icon"
+                    src="assets/images/svg/menu.svg"
+                    alt="Menu"
+                />
             </div>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li class="current"><a href="contact.html">Contact</a></li>
-                    <li><a id="hire-me-btn-1" href="contact.html">Hire Me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="contact-title-cover">
-            <h1>Contact</h1>
-        </section>
-        <section class="contact-form">
-            <h1>Want To Get In Touch?</h1>
-            <form>
-                <input type="text" placeholder="Full Name" autocapitalize="words" autofocus required>
-                <input type="email" placeholder="Email Address" required>
-                <div class="phone-num-box">
-                    <select name="country-code" id="country-code">
-                        <option value="ethiopia">+251</option>
-                        <option value="somalia">+252</option>
-                        <option value="djibouti">+253</option>
-                        <option value="eritrea">+291</option>
-                    </select>
-                    <input type="tel" maxlength="9" required>
-                </div>
-                <textarea name="Message" cols="40" rows="10" placeholder="Message (optional)"></textarea>
-                <input type="submit">
-            </form>
-        </section>
-        <div class="location-on-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15760.946521333412!2d38.75165916423008!3d9.042166740914768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2set!4v1700896297800!5m2!1sen!2set" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </main>
-    <footer>
-        <div class="contact">
-            <p class="logo">Hamdi M.</p>
-            <address>
-                <p><img src="images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
-                <p><img src="images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
-                <p><img src="images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
-            </address>
-            <div class="copyright-container">
-                <p>&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="https://github.com/hmyunis"><img src="images/svg/github.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img src="images/svg/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://t.me/Hamdi00"><img src="images/svg/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><span id="scroll-to-top">Scroll to Top 🔼</span></a>
+            <!-- Mobile Menu -->
+            <ul class="hidden header__nav--mobile">
+                <li class="p-4 hover:bg-seven">
+                    <a class="text-eleven" href="home.html">Home</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div
+                class="header__scroll-progress-container fixed top-0 left-0 w-full h-1 bg-twelve z-2"
+            >
+                <div class="scroll-progress h-full w-0 bg-eleven"></div>
+            </div>
+        </header>
+        <main>
+            <h1
+                class="flex justify-center items-center bg-gradient-to-bl from-[#84fab0] to-[#8fd3f4] h-[20vh] text-[3rem] font-light max-sm:h-[15vh]"
+            >
+                Contact
+            </h1>
+            <section
+                class="bg-blue-300 flex flex-col items-center gap-4 p-8 max-md:p-2 max-md:pb-3"
+            >
+                <h1 class="text-4xl font-bold text-center pb-4 max-md:p-1 max-md:text-2xl">
+                    Want To Get In Touch?
+                </h1>
+                <form class="flex flex-col flex-wrap gap-4 w-4/5 max-md:w-full">
+                    <input
+                        class="rounded-[0.3rem] h-12 text-xl pl-4 max-md:w-full"
+                        type="text"
+                        placeholder="Full Name"
+                        autocapitalize="words"
+                        autofocus
+                        required
+                    />
+                    <input
+                        class="rounded-[0.3rem] h-12 text-xl pl-4 max-md:w-full"
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                    />
+                    <div class="flex gap-4 max-md:w-max-full">
+                        <select
+                            class="rounded-[0.3rem] h-12 text-xl max-md:w-1/3"
+                            name="country-code"
+                            id="country-code"
+                        >
+                            <option value="ethiopia">+251</option>
+                            <option value="somalia">+252</option>
+                            <option value="djibouti">+253</option>
+                            <option value="eritrea">+291</option>
+                        </select>
+                        <input
+                            class="rounded-[0.3rem] h-12 text-xl pl-4 w-full max-md:w-full"
+                            type="tel"
+                            maxlength="9"
+                            required
+                            placeholder="Phone Number"
+                        />
+                    </div>
+                    <textarea
+                        class="rounded-[0.3rem] text-xl p-4 max-md:w-full"
+                        name="Message"
+                        cols="40"
+                        rows="10"
+                        placeholder="Message (optional)"
+                    ></textarea>
+                    <input
+                        class="text-xl w-1/3 max-md:w-1/2 p-4 self-center border-green-400 rounded-[2rem] bg-green-400 hover:text-2xl transition-all hover:bg-emerald-400"
+                        type="submit"
+                    />
+                </form>
+            </section>
+            <div class="bg-green-100 p-8 max-md:p-2">
+                <iframe
+                    class="w-11/12 mx-auto"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15760.946521333412!2d38.75165916423008!3d9.042166740914768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2set!4v1700896297800!5m2!1sen!2set"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </main>
+        <footer class="bg-two text-center text-seven">
+            <div class="p-4 shadow-md shadow-one flex flex-col gap-4">
+                <p>
+                    <a
+                        class="font-Lumanosino shadow-black hover:text-xl font-bold bg-four text-nine border border-one shadow-md rounded-tr-[10rem] rounded-bl-[10rem] p-[0.2em]"
+                        href="home.html"
+                        >Hamdi M.</a
+                    >
+                </p>
+
+                <address class="flex flex-wrap justify-center gap-8">
+                    <p class="text-six">
+                        <img
+                            class="w-5 inline"
+                            src="assets/images/svg/phone-solid.svg"
+                            alt="Phone"
+                        />
+                        <a class="hover:text-xl transition-all" href="#">+251 912 345 678</a>
+                    </p>
+                    <p class="text-six">
+                        <img
+                            class="w-5 inline"
+                            src="assets/images/svg/envelope-solid.svg"
+                            alt="Email"
+                        />
+                        <a class="hover:text-xl transition-all" href="mailto:hm456123@gmail.com"
+                            >hm456123@gmail.com</a
+                        >
+                    </p>
+                    <p class="text-six">
+                        <img
+                            class="w-5 inline"
+                            src="assets/images/svg/location-dot-solid.svg"
+                            alt="Location"
+                        />
+                        <a
+                            class="hover:text-xl transition-all"
+                            href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7"
+                            >5kilo AAiT, Addis Ababa</a
+                        >
+                    </p>
+                </address>
+
+                <div class="flex justify-between">
+                    <p class="copyright-socials__copyright">
+                        &copy; 2023
+                        <a href="home.html"
+                            ><span
+                                class="font-Lumanosino shadow-black hover:text-xl font-bold bg-four text-nine border border-one shadow-md rounded-tr-[10rem] rounded-bl-[10rem] p-[0.2em]"
+                                >Hamdi M.</span
+                            >™</a
+                        >
+                        | All Rights Reserved
+                    </p>
+                    <div class="flex gap-4 max-md:hidden">
+                        <a class="socials-item - hover:btn-hover" href="https://github.com/hmyunis"
+                            ><img class="w-6" src="assets/images/svg/github.svg" alt="Github"
+                        /></a>
+                        <a
+                            class="socials-item - hover:btn-hover"
+                            href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"
+                            ><img class="w-6" src="assets/images/svg/linkedin.svg" alt="LinkedIn"
+                        /></a>
+                        <a class="socials-item - hover:btn-hover" href="https://t.me/Hamdi00"
+                            ><img class="w-6" src="assets/images/svg/telegram.svg" alt="Telegram"
+                        /></a>
+                        <a class="" href="#">🔼</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>

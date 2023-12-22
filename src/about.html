@@ -1,319 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="shortcut icon" href="images/HM-favicon-png.png" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <p><a href="#" class="logo">Hamdi M.</a> Portfolio</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HM Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon" />
+    </head>
+    <body class="font-Poppins">
+        <header class="sticky top-0 bg-twelve header">
+            <div class="text-ten flex justify-between items-center my-0 mx-4 h-[10vh]">
+                <p class="text-2xl italic">
+                    <a
+                        href="home.html"
+                        class="font-Lumanosino hover:text-3xl transition-all font-bold bg-four text-nine border border-one shadow-md rounded-tr-[10rem] rounded-bl-[10rem] p-[0.2em]"
+                        >Hamdi M.</a
+                    >
+                    <span id="typed-output">Portfolio</span>
+                </p>
+                <nav class="max-md:hidden">
+                    <ul class="flex gap-8">
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="home.html">Home</a>
+                        </li>
+                        <li class="text-four text-lg border-b-2 border-b-seven">
+                            <a class="hover:text-xl transition-all" href="about.html">About</a>
+                        </li>
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="services.html"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="text-ten">
+                            <a class="hover:text-xl transition-all" href="contact.html">Contact</a>
+                        </li>
+                        <li class="text-ten">
+                            <a
+                                class="rounded-3xl p-2 bg-green-300 text-green-900 hover:text-xl hover:bg-green-500 border-green-500 border transition-all"
+                                href="contact.html"
+                                >Hire Me</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <img class="hidden max-md:block w-10 header__menu-icon" src="assets/images/svg/menu.svg" alt="Menu" />
             </div>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li class="current"><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a id="hire-me-btn-1" href="contact.html">Hire Me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="about-title-cover">
-            <h1>About Me</h1>
-        </section>
-        <section class="my-biography">
-            <div class="bio-container">
-                <img id="bio-img" src="images/bio-photo.png" alt="My Photo">
-                <h3>My Biography</h3>
-                <h1>An Undergrad UI Designer & Web Developer Based in Ethiopia</h1>
-                <p>Greetings! I'm Hamdi Mohammed, a fervent student, immersed in the worlds of UI design and web development. Currently pursuing my Software Engineering degree at Addis Ababa University, my journey is defined by a commitment to fuse creativity and technology into impactful digital experiences. My passion ignited during early academic years, and through comprehensive coursework, I've cultivated skills spanning both the aesthetic and technical dimensions of UI design and web development. A believer in the transformative power of design, I am dedicated to crafting interfaces that not only captivate visually but also deliver seamless, user-centric interactions.</p>
-                <p>In the dynamic landscape of design, I draw inspiration from diverse sources, translating it into visually stunning and functionally robust interfaces. On the development front, my focus lies in the creation of clean and efficient code, translating design concepts into functional and responsive websites. My attention to detail ensures that every pixel serves a purpose, aligning with the overarching vision of a project. This meticulous approach results in digital experiences that seamlessly merge form and function, fostering a sense of connection and usability.</p>
-                <p>Beyond the academic realm, I actively seek and thrive in opportunities to apply my skills to real-world projects. This hands-on experience has not only expanded my technical proficiency but also cultivated a profound appreciation for collaboration and innovative problem-solving. Engaging in diverse projects has equipped me with the ability to think critically and push the boundaries of my capabilities, contributing to a robust skill set that I bring to every endeavor.</p>
-                <p>In the ever-evolving tech landscape, my commitment to staying curious and adaptable defines my approach. Each project becomes an opportunity not just to showcase my current skill set but also to embrace continuous learning. Whether it's mastering a new framework or experimenting with design trends, I thrive on the excitement of pushing my own boundaries and evolving alongside the digital frontier.</p>
-                <p>My design philosophy is not just about creating visually appealing interfaces but also about fostering a sense of connection. I believe that every click, scroll, or interaction should feel intuitive and purposeful. User feedback becomes a valuable compass, guiding refinements and improvements. The iterative nature of design allows me to enhance user experiences progressively, ensuring that each project is a step forward in the pursuit of excellence.</p>
-                <p>Collaboration sits at the core of my professional ethos. I value the diversity of perspectives that collaboration brings, whether it's with fellow designers, developers, or clients. Through effective communication and teamwork, I've witnessed the transformative power of collective creativity. Collaborative efforts not only elevate the quality of the end product but also contribute to a rich and rewarding professional journey.</p>
-                <p>As I navigate through this dynamic intersection of design and development, I invite you to explore the portfolio that encapsulates my creative endeavors. Each project is a chapter in a story of growth, innovation, and a relentless pursuit of excellence. Your presence on this journey is not just appreciated; it's an integral part of the narrative that propels me forward.</p>
-                <div class="listen-biography">
-                    <label>Listen to the article🔉</label>
-                    <audio src="" controls muted></audio>
-                </div>
+            <!-- Mobile Menu -->
+            <ul class="hidden header__nav--mobile">
+                <li class="p-4 hover:bg-seven">
+                    <a class="text-eleven" href="home.html">Home</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li class="p-4 hover:bg-seven">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div
+                class="header__scroll-progress-container fixed top-0 left-0 w-full h-1 bg-twelve z-2"
+            >
+                <div class="scroll-progress h-full w-0 bg-eleven"></div>
             </div>
-        </section>
-        <section class="featured-skills">
-            <div class="skills-container">
-                <img id="full-bio-img" src="images/bio-photo.png" alt="My Photo">
-                <h3>My Skills</h3>
-                <h1>My Featured Skills</h1>
-                <p>I specialize in creating visually stunning and user-friendly websites, seamlessly blending UI design with web development. My skills encompass responsive design, front-end technologies, and a keen eye for detail. Let's elevate your digital presence with innovation and expertise.</p>
-                <img src="images/skill-levels.png" alt="My Skill Levels">
-            </div>
-        </section>
-        <div class="skills-grid">
-            <img src="images/bio-photo.png" alt="My Photo">
-            <section class="skills-grid-container">
-                <div class="skills-row-1">
-                    <div class="skill-item">
-                        <img src="images/web-dev-icon-2.png" alt="Web Development">
-                        <h2>Web Development</h2>
-                        <p>I meticulously craft dynamic and responsive websites. Leveraging a proficiency in HTML, CSS, and JavaScript, I bring ideas to life with clean code and seamless functionality. Every project reflects my commitment to precision and user-centric design.</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/analysis-icon.png" alt="Research Analysis">
-                        <h2>Research Analysis</h2>
-                        <p>Expert in research analysis, I delve deep into user behavior and market trends to inform strategic decisions. By translating insights into actionable solutions, I ensure that each web project is tailored to meet both user expectations and business objectives.</p>
-                    </div>
-                </div>
-                <div class="skills-row-2">
-                    <div class="skill-item">
-                        <img src="images/responsive-icon.png" alt="Responsive Design">
-                        <h2>Responsive Design</h2>
-                        <p>Specializing in responsive design, I create websites that adapt seamlessly across devices. Utilizing CSS media queries and flexible grids, my designs ensure a consistent and optimal user experience, irrespective of the device, screen size, or orientation.</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/design-trends-icon.png" alt="Design Trends">
-                        <h2>Design Trends</h2>
-                        <p>At the forefront of design trends, I infuse projects with the latest visual aesthetics and user experience principles. From innovative layouts to contemporary elements, I bring a keen understanding of design trends to create modern, engaging, and impactful digital experiences.</p>
-                    </div>
-                </div>
-                <p><a href="home.html#portfolio-section">View Projects ➡</a></p>
-            </section>
-        </div>
-        <section class="resume-hero">
-            <h2 class="resume-heading">Resume / CV</h2>
-            <section class="education-exp">
-                <h2 class="resume-heading">Education and Experience</h2>
-                <img src="images/bio-photo.png" alt="My Photo">
-                <p>Currently pursuing a Bachelor's degree in Software Engineering at Addis Ababa University, I am a dedicated third-year student with a commitment to academic excellence. My coursework delves into cutting-edge technologies, laying a robust foundation for my future as a proficient and innovative software engineer.</p>
-                <table>
-                    <tr>
-                        <th>Category</th>
-                        <th>Description</th>
-                        <th>Details</th>
-                    </tr>
-                    <tr>
-                        <td rowspan="3"><strong>Education</strong></td>
-                        <td>Degree</td>
-                        <td>Bachelor of Software Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>University</td>
-                        <td>Addis Ababa University</td>
-                    </tr>
-                    <tr>
-                        <td>Status</td>
-                        <td>3rd Year (Expected Graduation: 2025)</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4"><strong>Experience</strong></td>
-                        <td>Position</td>
-                        <td>Software Development Intern</td>
-                    </tr>
-                    <tr>
-                        <td>Company</td>
-                        <td>InnovateTech Solutions</td>
-                    </tr>
-                    <tr>
-                        <td>Duration</td>
-                        <td>May 2022 - August 2023</td>
-                    </tr>
-                    <tr>
-                        <td>Responsibilities</td>
-                        <td>Collaborated on cutting-edge projects, contributing to the development of innovative solutions in a dynamic team environment.</td>
-                    </tr>
-                </table>
-                <p>In conclusion, my academic trajectory at Addis Ababa University in Software Engineering is complemented by a transformative Software Development Internship at InnovateTech Solutions. As a dedicated third-year student, I have cultivated a solid foundation in theoretical concepts, enriched by hands-on experience in a dynamic professional setting. At InnovateTech Solutions, I actively contributed to cutting-edge projects, refining my skills in collaborative problem-solving and fostering a passion for innovation. This fusion of academic rigor and practical insights positions me as a versatile and forward-thinking individual, poised to make impactful contributions in the dynamic realm of software engineering.</p>
-            </section>
-            <section class="vha-hero voluntary-hero">
-                <h2 class="resume-heading">Voluntary Activities</h2>
-                <div class="vha-item-container voluntary-container">
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/comm-volunteering.png" alt="Community Volunteering">
-                            <figcaption>
-                                <h3>Community Volunteering</h3>
-                                <p>Dedicated to community service, I actively engage in local volunteering initiatives. By contributing time and skills, I foster positive change and social cohesion, enriching lives and creating a sense of community unity.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/mentorship.png" alt="Mentorship">
-                            <figcaption>
-                                <h3>Mentorship Programs</h3>
-                                <p>As a mentor, I guide aspiring individuals in their professional and personal development journeys. Sharing insights, offering advice, and providing support, I empower mentees to navigate challenges and achieve their goals.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/envirnoment.png" alt="Envirnonmental Advocacy">
-                            <figcaption>
-                                <h3>Envirnonmental Advocacy</h3>
-                                <p>Passionate about environmental sustainability, I participate in advocacy programs. Through awareness campaigns and hands-on initiatives, I strive to make a positive impact, promoting eco-friendly practices and fostering a sense of responsibility toward our planet.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </section>
-            <section class="vha-hero hobbies-hero">
-                <h2 class="resume-heading">Hobbies</h2>
-                <div class="vha-item-container hobbies-container">
-                    <div class="vha-item hobby-item">
-                        <figure>
-                            <img src="images/photography.png" alt="Photography">
-                            <figcaption>
-                                <h3>Photography</h3>
-                                <p>Capturing moments through the lens is my passion. Photography allows me to explore creativity, play with perspectives, and immortalize memories. From landscapes to candid portraits, each shot tells a unique story.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="vha-item hobby-item">
-                        <figure>
-                            <img src="images/gardening.png" alt="Gardening">
-                            <figcaption>
-                                <h3>Gardening</h3>
-                                <p>In the tranquility of my garden, I find solace. Nurturing plants, witnessing growth, and creating a harmonious green space bring joy and fulfillment. Gardening is not just a hobby; it's a therapeutic journey.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="vha-item hobby-item">
-                        <figure>
-                            <img src="images/cooking.png" alt="Cooking">
-                            <figcaption>
-                                <h3>Cooking and Culinary Exploration</h3>
-                                <p>Culinary experimentation is my creative outlet. From mastering diverse cuisines to creating my own recipes, cooking is a delightful journey. It's a blend of flavors, an art form that tantalizes taste buds and sparks joy.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </section>
-            <section class="vha-hero achievement-hero">
-                <h2 class="resume-heading">Achievements</h2>
-                <div class="vha-item-container achievement-container">
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/pro-milestone.png" alt="Professional Milestone">
-                            <figcaption>
-                                <h3>Professional Milestone</h3>
-                                <p>Achieving the 'Project of the Year' award marked a pivotal moment in my professional journey. This milestone not only showcased my expertise but also demonstrated dedication and resilience in overcoming challenges. It's a testament to my commitment to excellence in web development.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/academic-exe.png" alt="Academic Excellence">
-                            <figcaption>
-                                <h3>Academic Excellence</h3>
-                                <p>Attaining a Master's degree in Computer Science reflects my commitment to academic excellence. The rigorous pursuit of knowledge and the ability to apply it in real-world scenarios have been pivotal in shaping my skills and perspectives.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/leadership.png" alt="Leadership Recognition">
-                            <figcaption>
-                                <h3>Leadership Recognition</h3>
-                                <p>Being recognized as the 'Team Leader of the Quarter' is a testament to my effective leadership style. Steering teams toward success, fostering collaboration, and achieving measurable outcomes are key components of my leadership journey, illustrating my ability to inspire and drive results.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </section>
-            
-        </section>
-        <section class="office-tour">
-            <h2 class="resume-heading">Take A Tour Of My Office</h2>
-            <p>Welcome to my work haven! The office is a symphony of creativity, adorned with minimalist aesthetics and vibrant touches. The spacious desk bathed in natural light is my command center, surrounded by tech essentials. Here, ideas come to life, fueled by inspiration and the hum of productivity.</p>
-            <div class="video-and-navbar">
-                <video src="media/office-tour.mp4" poster="images/my-office-poster.jpg" controls></video>
-                <aside>
-                    <h2>Navigation Links</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="#">My Biography</a></li>
-                            <li><a href="#">Featured Skills</a></li>
-                            <li><a href="#">Resume / CV</a></li>
-                            <li><a href="home.html#portfolio-section">Recent Works</a></li>
-                            <li><a href="#scroll-to-top">Testimonials</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </div>
-        </section>
-        <section class="reviews">
-            <h1>Reviews</h1>
-            <section class="testimonials">
-                <h2>My Clients and Testimonials</h2>
-                <div class="testimonials-container">
-                    <div class="testimonial-item">
-                        <div class="testimonial-id">
-                            <img src="images/test-1.png" alt="Testimonial 1">
-                            <div class="avatar-name-occupation">
-                                <h2>William James</h2>
-                                <h4>Photographer</h4>
-                            </div>
+        </header>
+        <main>
+            <h1
+                class="flex justify-center items-center bg-gradient-to-bl from-[#84fab0] to-[#8fd3f4] h-[20vh] text-[3rem] font-light max-sm:h-[15vh]"
+            >
+                About Me
+            </h1>
+            <section class="bg-sky-300 p-8 max-md:p-1">
+                <div class="p-4 bg-amber-50 shadow-black shadow-md overflow-hidden">
+                    <img
+                        class="float-left mt-0 mr-4 mb-1 ml-0 max-md:w-full"
+                        src="assets/images/bio-photo.png"
+                        alt="My Photo"
+                    />
+                    <hgroup class="">
+                        <h3 class="text-eleven text-xl">My Biography</h3>
+                        <h1 class="text-3xl font-bold">
+                            An Undergrad UI Designer & Web Developer Based in Ethiopia
+                        </h1>
+                        <p class="my-2">
+                            Greetings! I'm Hamdi Mohammed, a fervent student, immersed in the worlds
+                            of UI design and web development. Currently pursuing my Software
+                            Engineering degree at Addis Ababa University, my journey is defined by a
+                            commitment to fuse creativity and technology into impactful digital
+                            experiences. My passion ignited during early academic years, and through
+                            comprehensive coursework, I've cultivated skills spanning both the
+                            aesthetic and technical dimensions of UI design and web development. A
+                            believer in the transformative power of design, I am dedicated to
+                            crafting interfaces that not only captivate visually but also deliver
+                            seamless, user-centric interactions.
+                        </p>
+                        <p class="my-2">
+                            In the dynamic landscape of design, I draw inspiration from diverse
+                            sources, translating it into visually stunning and functionally robust
+                            interfaces. On the development front, my focus lies in the creation of
+                            clean and efficient code, translating design concepts into functional
+                            and responsive websites. My attention to detail ensures that every pixel
+                            serves a purpose, aligning with the overarching vision of a project.
+                            This meticulous approach results in digital experiences that seamlessly
+                            merge form and function, fostering a sense of connection and usability.
+                        </p>
+                        <p class="my-2">
+                            Beyond the academic realm, I actively seek and thrive in opportunities
+                            to apply my skills to real-world projects. This hands-on experience has
+                            not only expanded my technical proficiency but also cultivated a
+                            profound appreciation for collaboration and innovative problem-solving.
+                            Engaging in diverse projects has equipped me with the ability to think
+                            critically and push the boundaries of my capabilities, contributing to a
+                            robust skill set that I bring to every endeavor.
+                        </p>
+                        <p class="my-2">
+                            In the ever-evolving tech landscape, my commitment to staying curious
+                            and adaptable defines my approach. Each project becomes an opportunity
+                            not just to showcase my current skill set but also to embrace continuous
+                            learning. Whether it's mastering a new framework or experimenting with
+                            design trends, I thrive on the excitement of pushing my own boundaries
+                            and evolving alongside the digital frontier.
+                        </p>
+                        <p class="my-2">
+                            My design philosophy is not just about creating visually appealing
+                            interfaces but also about fostering a sense of connection. I believe
+                            that every click, scroll, or interaction should feel intuitive and
+                            purposeful. User feedback becomes a valuable compass, guiding
+                            refinements and improvements. The iterative nature of design allows me
+                            to enhance user experiences progressively, ensuring that each project is
+                            a step forward in the pursuit of excellence.
+                        </p>
+                        <p class="my-2">
+                            Collaboration sits at the core of my professional ethos. I value the
+                            diversity of perspectives that collaboration brings, whether it's with
+                            fellow designers, developers, or clients. Through effective
+                            communication and teamwork, I've witnessed the transformative power of
+                            collective creativity. Collaborative efforts not only elevate the
+                            quality of the end product but also contribute to a rich and rewarding
+                            professional journey.
+                        </p>
+                        <p class="my-2">
+                            As I navigate through this dynamic intersection of design and
+                            development, I invite you to explore the portfolio that encapsulates my
+                            creative endeavors. Each project is a chapter in a story of growth,
+                            innovation, and a relentless pursuit of excellence. Your presence on
+                            this journey is not just appreciated; it's an integral part of the
+                            narrative that propels me forward.
+                        </p>
+                        <div class="flex justify-end gap-4">
+                            <label class="">Listen to the article🔉</label>
+                            <audio
+                                class="h-8"
+                                src="assets/media/bio-audio.mp3"
+                                controls
+                                muted
+                            ></audio>
                         </div>
-                        <blockquote>
-                            <p>"Working with Hamdi was a game-changer! His design expertise and seamless collaboration brought our vision to life. Professional, innovative, and a true pleasure to work with."</p>
-                            <p>Rating: ⭐⭐⭐⭐ (4/5)</p>
-                        </blockquote>
+                    </hgroup>
+                </div>
+            </section>
+
+            <section class="bg-sky-300 p-8 max-md:p-1" id="featured-skills">
+                <div class="p-4 bg-amber-50 shadow-black shadow-md flex gap-4 max-md:flex-wrap">
+                    <div>
+                        <h3 class="text-eleven text-2xl">My Skills</h3>
+                        <h1 class="text-3xl font-bold">My Featured Skills</h1>
+                        <p class="my-4">
+                            I specialize in creating visually stunning and user-friendly websites,
+                            seamlessly blending UI design with web development. My skills encompass
+                            responsive design, front-end technologies, and a keen eye for detail.
+                            Let's elevate your digital presence with innovation and expertise.
+                        </p>
+                        <img class="" src="assets/images/skill-levels.png" alt="My Skill Levels" />
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-id">
-                            <img src="images/test-2.png" alt="Testimonial 2">
-                            <div class="avatar-name-occupation">
-                                <h2>David Rodriguez</h2>
-                                <h4>Business Owner</h4>
-                            </div>
-                        </div>
-                        <blockquote>
-                            <p>"Hamdi exceeded expectations! His web development skills transformed our online presence. Responsive, detail-oriented, and always meeting deadlines. A top-notch professional that I highly recommend."</p>
-                            <p>Rating: ⭐⭐⭐⭐⭐ (5/5)</p>
-                        </blockquote>
+                    <img class="max-md:-order-1 max-md:w-full" src="assets/images/bio-photo.png" alt="My Photo" />
+                </div>
+            </section>
+            <section class="bg-two flex flex-wrap justify-evenly gap-8 p-8 max-md:p-0">
+                <img class="" src="assets/images/bio-photo.png" alt="My Photo" />
+                <div class="grid grid-cols-2 gap-x-4 max-md:grid-cols-1 max-md:p-2">
+                    <div
+                        class="max-md:w-full bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem]"
+                            src="assets/images/web-dev-icon-2.png"
+                            alt="Web Development"
+                        />
+                        <h2 class="text-2xl font-bold">Web Development</h2>
+                        <p class="my-2 leading-5">
+                            I meticulously craft dynamic and responsive websites. Leveraging a
+                            proficiency in HTML, CSS, and JavaScript, I bring ideas to life with
+                            clean code and seamless functionality. Every project reflects my
+                            commitment to precision and user-centric design.
+                        </p>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-id">
-                            <img src="images/test-3.png" alt="Testimonial 3">
-                            <div class="avatar-name-occupation">
-                                <h2>Emily Parker</h2>
-                                <h4>Marketing Specialist</h4>
-                            </div>
-                        </div>
-                        <blockquote>
-                            <p>"Exceptional UI design by Hamdi! His creativity and attention to detail made our project stand out. Timely delivery and a collaborative spirit. A reliable and skilled professional!"</p>
-                            <p>Rating: ⭐⭐⭐⭐ (4/5)</p>
-                        </blockquote>
+                    <div
+                        class="max-md:w-full bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem]"
+                            src="assets/images/analysis-icon.png"
+                            alt="Research Analysis"
+                        />
+                        <h2 class="text-2xl font-bold">Research Analysis</h2>
+                        <p class="my-2 leading-5">
+                            Expert in research analysis, I delve deep into user behavior and market
+                            trends to inform strategic decisions. By translating insights into
+                            actionable solutions, I ensure that each web project is tailored to meet
+                            both user expectations and business objectives.
+                        </p>
+                    </div>
+                    <div
+                        class="max-md:w-full bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem]"
+                            src="assets/images/responsive-icon.png"
+                            alt="Responsive Design"
+                        />
+                        <h2 class="text-2xl font-bold">Responsive Design</h2>
+                        <p class="my-2 leading-5">
+                            Specializing in responsive design, I create websites that adapt
+                            seamlessly across devices. Utilizing CSS media queries and flexible
+                            grids, my designs ensure a consistent and optimal user experience,
+                            irrespective of the device, screen size, or orientation.
+                        </p>
+                    </div>
+                    <div
+                        class="max-md:w-full bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                    >
+                        <img
+                            class="w-[5rem]"
+                            src="assets/images/design-trends-icon.png"
+                            alt="Design Trends"
+                        />
+                        <h2 class="text-2xl font-bold">Design Trends</h2>
+                        <p class="my-2 leading-5">
+                            At the forefront of design trends, I infuse projects with the latest
+                            visual aesthetics and user experience principles. From innovative
+                            layouts to contemporary elements, I bring a keen understanding of design
+                            trends to create modern, engaging, and impactful digital experiences.
+                        </p>
                     </div>
                 </div>
-                <p><a href="#">Read More ➡</a></p>
+                <p class="text-center w-full">
+                    <a class="hover:text-2xl text-eleven" href="home.html#my-portfolio"
+                        >View Projects ➡</a
+                    >
+                </p>
             </section>
-        </section>
-    </main>
-    <footer>
-        <div class="contact">
-            <p class="logo">Hamdi M.</p>
-            <address>
-                <p><img src="images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
-                <p><img src="images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
-                <p><img src="images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
-            </address>
-            <div class="copyright-container">
-                <p>&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="https://github.com/hmyunis"><img src="images/svg/github.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img src="images/svg/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://t.me/Hamdi00"><img src="images/svg/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><span id="scroll-to-top">Scroll to Top 🔼</span></a>
+            <section class="bg-green-100 p-8 max-md:p-1" id="resume">
+                <h2 class="text-4xl font-bold text-center pb-4">Resume / CV</h2>
+                <section class="p-4 bg-teal-100 shadow-black shadow-md">
+                    <h2 class="text-4xl font-bold text-center pb-4">Education and Experience</h2>
+                    <div class="flex gap-4 max-md:flex-wrap">
+                        <img class="max-md:w-full" src="assets/images/bio-photo.png" alt="My Photo" />
+                        <div class="max-md:overflow-scroll">
+                            <p class="my-4">
+                                Currently pursuing a Bachelor's degree in Software Engineering at
+                                Addis Ababa University, I am a dedicated third-year student with a
+                                commitment to academic excellence. My coursework delves into
+                                cutting-edge technologies, laying a robust foundation for my future
+                                as a proficient and innovative software engineer.
+                            </p>
+                            <table class="border border-black border-collapse max-w-full">
+                                <tr>
+                                    <th
+                                        class="bg-green-50 border-black border-2 border-solid text-left p-2"
+                                    >
+                                        Category
+                                    </th>
+                                    <th
+                                        class="bg-green-50 border-black border-2 border-solid text-left p-2"
+                                    >
+                                        Description
+                                    </th>
+                                    <th
+                                        class="bg-green-50 border-black border-2 border-solid text-left p-2"
+                                    >
+                                        Details
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="border-2 border-black text-left p-2" rowspan="3">
+                                        <strong>Education</strong>
+                                    </td>
+                                    <td class="border-2 border-black text-left p-2">Degree</td>
+                                    <td class="border-2 border-black text-left p-2">
+                                        Bachelor of Software Engineering
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-2 border-black text-left p-2">University</td>
+                                    <td class="border-2 border-black text-left p-2">
+                                        Addis Ababa University
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-2 border-black text-left p-2">Status</td>
+                                    <td class="border-2 border-black text-left p-2">
+                                        3rd Year (Expected Graduation: 2025)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-2 border-black text-left p-2" rowspan="4">
+                                        <strong>Experience</strong>
+                                    </td>
+                                    <td class="border-2 border-black text-left p-2">Position</td>
+                                    <td class="border-2 border-black text-left p-2">
+                                        Software Development Intern
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-2 border-black text-left p-2">Company</td>
+                                    <td class="border-2 border-black text-left p-2">
+                                        InnovateTech Solutions
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-2 border-black text-left p-2">Duration</td>
+                                    <td class="border-2 border-black text-left p-2">
+                                        May 2022 - August 2023
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-2 border-black text-left p-2">
+                                        Responsibilities
+                                    </td>
+                                    <td class="border-2 border-black text-left p-2">
+                                        Collaborated on cutting-edge projects, contributing to the
+                                        development of innovative solutions in a dynamic team
+                                        environment.
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="my-4">
+                                In conclusion, my academic trajectory at Addis Ababa University in
+                                Software Engineering is complemented by a transformative Software
+                                Development Internship at InnovateTech Solutions. As a dedicated
+                                third-year student, I have cultivated a solid foundation in
+                                theoretical concepts, enriched by hands-on experience in a dynamic
+                                professional setting. At InnovateTech Solutions, I actively
+                                contributed to cutting-edge projects, refining my skills in
+                                collaborative problem-solving and fostering a passion for
+                                innovation. This fusion of academic rigor and practical insights
+                                positions me as a versatile and forward-thinking individual, poised
+                                to make impactful contributions in the dynamic realm of software
+                                engineering.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="my-8 bg-teal-200 shadow-black shadow-md p-8 max-md:p-1 max-md:py-2">
+                    <h2 class="text-4xl font-bold text-center pb-4">Voluntary Activities</h2>
+                    <div class="flex flex-wrap justify-evenly gap-4">
+                        <div
+                            class="text-center bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                        >
+                            <img
+                                class="w-[5rem] mx-auto"
+                                src="assets/images/comm-volunteering.png"
+                                alt="Community Volunteering"
+                            />
+                            <h2 class="font-bold text-2xl mt-1">Community Volunteering</h2>
+                            <p class="my-2 leading-4">
+                                Dedicated to community service, I actively engage in local
+                                volunteering initiatives. By contributing time and skills, I foster
+                                positive change and social cohesion, enriching lives and creating a
+                                sense of community unity.
+                            </p>
+                        </div>
+                        <div
+                            class="text-center bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                        >
+                            <img
+                                class="w-[5rem] mx-auto"
+                                src="assets/images/mentorship.png"
+                                alt="Mentorship"
+                            />
+                            <h2 class="font-bold text-2xl mt-1">Mentorship Programs</h2>
+                            <p class="my-2 leading-4">
+                                As a mentor, I guide aspiring individuals in their professional and
+                                personal development journeys. Sharing insights, offering advice,
+                                and providing support, I empower mentees to navigate challenges and
+                                achieve their goals.
+                            </p>
+                        </div>
+                        <div
+                            class="text-center bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                        >
+                            <img
+                                class="w-[5rem] mx-auto"
+                                src="assets/images/envirnoment.png"
+                                alt="Envirnonmental Advocacy"
+                            />
+                            <h2 class="font-bold text-2xl mt-1">Envirnonmental Advocacy</h2>
+                            <p class="my-2 leading-4">
+                                Passionate about environmental sustainability, I participate in
+                                advocacy programs. Through awareness campaigns and hands-on
+                                initiatives, I strive to make a positive impact, promoting
+                                eco-friendly practices and fostering a sense of responsibility
+                                toward our planet.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="my-8 bg-sky-300 shadow-black shadow-md p-8 max-md:p-1 max-md:py-2">
+                    <h2 class="text-4xl font-bold text-center pb-4">Hobbies</h2>
+                    <div class="flex flex-wrap justify-evenly gap-4">
+                        <div
+                            class="text-center bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                        >
+                            <img
+                                class="w-[5rem] mx-auto"
+                                src="assets/images/photography.png"
+                                alt="Photography"
+                            />
+                            <h2 class="font-bold text-2xl mt-1">Photography</h2>
+                            <p class="my-2 leading-4">
+                                Capturing moments through the lens is my passion. Photography allows
+                                me to explore creativity, play with perspectives, and immortalize
+                                memories. From landscapes to candid portraits, each shot tells a
+                                unique story.
+                            </p>
+                        </div>
+                        <div
+                            class="text-center bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                        >
+                            <img
+                                class="w-[5rem] mx-auto"
+                                src="assets/images/gardening.png"
+                                alt="Gardening"
+                            />
+                            <h2 class="font-bold text-2xl mt-1">Gardening</h2>
+                            <p class="my-2 leading-4">
+                                In the tranquility of my garden, I find solace. Nurturing plants,
+                                witnessing growth, and creating a harmonious green space bring joy
+                                and fulfillment. Gardening is not just a hobby; it's a therapeutic
+                                journey.
+                            </p>
+                        </div>
+                        <div
+                            class="text-center bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                        >
+                            <img
+                                class="w-[5rem] mx-auto"
+                                src="assets/images/cooking.png"
+                                alt="Cooking"
+                            />
+                            <h2 class="font-bold text-2xl mt-1">
+                                Cooking and Culinary Exploration
+                            </h2>
+                            <p class="my-2 leading-4">
+                                Culinary experimentation is my creative outlet. From mastering
+                                diverse cuisines to creating my own recipes, cooking is a delightful
+                                journey. It's a blend of flavors, an art form that tantalizes taste
+                                buds and sparks joy.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="my-8 bg-teal-200 shadow-black shadow-md p-8 max-md:p-1 max-md:py-2">
+                    <h2 class="text-4xl font-bold text-center pb-4">Achievements</h2>
+                    <div class="flex flex-wrap justify-evenly gap-4">
+                        <div
+                            class="text-center bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4achievement-item"
+                        >
+                            <img
+                                class="w-[5rem] mx-auto"
+                                src="assets/images/pro-milestone.png"
+                                alt="Professional Milestone"
+                            />
+                            <h2 class="font-bold text-2xl mt-1">Professional Milestone</h2>
+                            <p class="my-2 leading-4">
+                                Achieving the 'Project of the Year' award marked a pivotal moment in
+                                my professional journey. This milestone not only showcased my
+                                expertise but also demonstrated dedication and resilience in
+                                overcoming challenges. It's a testament to my commitment to
+                                excellence in web development.
+                            </p>
+                        </div>
+                        <div
+                            class="text-center bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4achievement-item"
+                        >
+                            <img
+                                class="w-[5rem] mx-auto"
+                                src="assets/images/academic-exe.png"
+                                alt="Academic Excellence"
+                            />
+                            <h2 class="font-bold text-2xl mt-1">Academic Excellence</h2>
+                            <p class="my-2 leading-4">
+                                Attaining a Master's degree in Computer Science reflects my
+                                commitment to academic excellence. The rigorous pursuit of knowledge
+                                and the ability to apply it in real-world scenarios have been
+                                pivotal in shaping my skills and perspectives.
+                            </p>
+                        </div>
+                        <div
+                            class="text-center bg-green-100 border border-black border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4achievement-item"
+                        >
+                            <img
+                                class="w-[5rem] mx-auto"
+                                src="assets/images/leadership.png"
+                                alt="Leadership Recognition"
+                            />
+                            <h2 class="font-bold text-2xl mt-1">Leadership Recognition</h2>
+                            <p class="my-2 leading-4">
+                                Being recognized as the 'Team Leader of the Quarter' is a testament
+                                to my effective leadership style. Steering teams toward success,
+                                fostering collaboration, and achieving measurable outcomes are key
+                                components of my leadership journey, illustrating my ability to
+                                inspire and drive results.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="bg-two text-green-100 p-8">
+                <h2 class="text-4xl font-bold text-center pb-4">Take A Tour Of My Office</h2>
+                <p class="text-center py-4 mx-[5rem] max-md:m-1">
+                    Welcome to my work haven! The office is a symphony of creativity, adorned with
+                    minimalist aesthetics and vibrant touches. The spacious desk bathed in natural
+                    light is my command center, surrounded by tech essentials. Here, ideas come to
+                    life, fueled by inspiration and the hum of productivity.
+                </p>
+                <div class="flex justify-evenly gap-8 max-md:flex-wrap">
+                    <video
+                        class="w-2/3 rounded-2xl max-md:w-full"
+                        src="assets/media/office-tour.mp4"
+                        poster="assets/images/my-office-poster.jpg"
+                        controls
+                    ></video>
+                    <aside
+                        class="w-1/4 max-md:w-full max-md:p-1 text-center content-center p-8 border-solid border-blue-200 border h-fit rounded-tr-[5rem] rounded-bl-[5rem] border-x-cyan-400 border-y-emerald-300 border-y-[1rem]"
+                    >
+                        <h2 class="text-3xl text-green-100 font-bold">Navigation Links</h2>
+                        <nav>
+                            <ul>
+                                <li
+                                    class="text-eleven hover:text-emerald-300 text-2xl leading-[4rem]"
+                                >
+                                    <a class="hover:text-3xl" href="#my-biography">My Biography</a>
+                                </li>
+                                <li
+                                    class="text-eleven hover:text-emerald-300 text-2xl leading-[4rem]"
+                                >
+                                    <a class="hover:text-3xl" href="#featured-skills"
+                                        >Featured Skills</a
+                                    >
+                                </li>
+                                <li
+                                    class="text-eleven hover:text-emerald-300 text-2xl leading-[4rem]"
+                                >
+                                    <a class="hover:text-3xl" href="#resume">Resume / CV</a>
+                                </li>
+                                <li
+                                    class="text-eleven hover:text-emerald-300 text-2xl leading-[4rem]"
+                                >
+                                    <a class="hover:text-3xl" href="home.html#my-portfolio"
+                                        >Recent Works</a
+                                    >
+                                </li>
+                                <li
+                                    class="text-eleven hover:text-emerald-300 text-2xl leading-[4rem]"
+                                >
+                                    <a class="hover:text-3xl" href="#testimonials">Testimonials</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                </div>
+            </section>
+            <section class="bg-green-100 p-8 max-md:p-0" id="testimonials">
+                <h1 class="text-4xl font-bold text-center pb-4">Reviews</h1>
+                <section class="">
+                    <h2 class="text-4xl font-bold text-center pb-4">My Clients and Testimonials</h2>
+                    <div class="flex justify-evenly flex-wrap gap-4">
+                        <div
+                            class="bg-blue-50 border border-cyan-400 shadow-xl border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                        >
+                            <div class="flex gap-4">
+                                <img
+                                    class="w-[5rem]"
+                                    src="assets/images/test-1.png"
+                                    alt="Testimonial 1"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <h2 class="font-bold text-2xl">William James</h2>
+                                    <h4 class="text-xl">Photographer</h4>
+                                </div>
+                            </div>
+                            <blockquote class="text-center">
+                                <p class="my-6 leading-5">
+                                    "Working with Hamdi was a game-changer! His design expertise and
+                                    seamless collaboration brought our vision to life. Professional,
+                                    innovative, and a true pleasure to work with."
+                                </p>
+                                <p class="">Rating: ⭐⭐⭐⭐ (4/5)</p>
+                            </blockquote>
+                        </div>
+                        <div
+                            class="bg-blue-50 border-2 border-cyan-400 shadow-xl border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                        >
+                            <div class="flex gap-4">
+                                <img
+                                    class="w-[5rem]"
+                                    src="assets/images/test-2.png"
+                                    alt="Testimonial 2"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <h2 class="font-bold text-2xl">David Rodriguez</h2>
+                                    <h4 class="text-xl">Business Owner</h4>
+                                </div>
+                            </div>
+                            <blockquote class="text-center">
+                                <p class="my-6 leading-5 max-md:leading-4">
+                                    "Hamdi exceeded expectations! His web development skills
+                                    transformed our online presence. Responsive, detail-oriented,
+                                    and always meeting deadlines. A top-notch professional that I
+                                    highly recommend."
+                                </p>
+                                <p class="">Rating: ⭐⭐⭐⭐⭐ (5/5)</p>
+                            </blockquote>
+                        </div>
+                        <div
+                            class="bg-blue-50 border-2 border-cyan-400 shadow-xl border-solid rounded-2xl p-4 w-[24rem] h-[18rem] mb-4"
+                        >
+                            <div class="flex gap-4">
+                                <img
+                                    class="w-[5rem]"
+                                    src="assets/images/test-3.png"
+                                    alt="Testimonial 3"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <h2 class="font-bold text-2xl">Emily Parker</h2>
+                                    <h4 class="text-xl">Marketing Specialist</h4>
+                                </div>
+                            </div>
+                            <blockquote class="text-center">
+                                <p class="my-6 leading-5">
+                                    "Exceptional UI design by Hamdi! His creativity and attention to
+                                    detail made our project stand out. Timely delivery and a
+                                    collaborative spirit. A reliable and skilled professional!"
+                                </p>
+                                <p class="">Rating: ⭐⭐⭐⭐ (4/5)</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <p class="text-center my-4">
+                        <a class="hover:text-xl transition-all" href="#">Read More ➡</a>
+                    </p>
+                </section>
+            </section>
+        </main>
+        <footer class="bg-two text-center text-seven">
+            <div class="p-4 shadow-md shadow-one flex flex-col gap-4">
+                <p>
+                    <a
+                        class="font-Lumanosino shadow-black hover:text-xl font-bold bg-four text-nine border border-one shadow-md rounded-tr-[10rem] rounded-bl-[10rem] p-[0.2em]"
+                        href="home.html"
+                        >Hamdi M.</a
+                    >
+                </p>
+
+                <address class="flex flex-wrap justify-center gap-8">
+                    <p class="text-six">
+                        <img
+                            class="w-5 inline"
+                            src="assets/images/svg/phone-solid.svg"
+                            alt="Phone"
+                        />
+                        <a class="hover:text-xl transition-all" href="#">+251 912 345 678</a>
+                    </p>
+                    <p class="text-six">
+                        <img
+                            class="w-5 inline"
+                            src="assets/images/svg/envelope-solid.svg"
+                            alt="Email"
+                        />
+                        <a class="hover:text-xl transition-all" href="mailto:hm456123@gmail.com"
+                            >hm456123@gmail.com</a
+                        >
+                    </p>
+                    <p class="text-six">
+                        <img
+                            class="w-5 inline"
+                            src="assets/images/svg/location-dot-solid.svg"
+                            alt="Location"
+                        />
+                        <a
+                            class="hover:text-xl transition-all"
+                            href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7"
+                            >5kilo AAiT, Addis Ababa</a
+                        >
+                    </p>
+                </address>
+
+                <div class="flex justify-between">
+                    <p class="copyright-socials__copyright">
+                        &copy; 2023
+                        <a href="home.html"
+                            ><span
+                                class="font-Lumanosino shadow-black hover:text-xl font-bold bg-four text-nine border border-one shadow-md rounded-tr-[10rem] rounded-bl-[10rem] p-[0.2em]"
+                                >Hamdi M.</span
+                            >™</a
+                        >
+                        | All Rights Reserved
+                    </p>
+                    <div class="flex gap-4 max-md:hidden">
+                        <a class="socials-item - hover:btn-hover" href="https://github.com/hmyunis"
+                            ><img class="w-6" src="assets/images/svg/github.svg" alt="Github"
+                        /></a>
+                        <a
+                            class="socials-item - hover:btn-hover"
+                            href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"
+                            ><img class="w-6" src="assets/images/svg/linkedin.svg" alt="LinkedIn"
+                        /></a>
+                        <a class="socials-item - hover:btn-hover" href="https://t.me/Hamdi00"
+                            ><img class="w-6" src="assets/images/svg/telegram.svg" alt="Telegram"
+                        /></a>
+                        <a class="" href="#">🔼</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
